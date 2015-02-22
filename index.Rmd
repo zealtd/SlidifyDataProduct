@@ -11,23 +11,24 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+
 ## Synopsis
 
 1. The purpose of this project is to explore the Fruits data set that comes with Google Visualization library.
 2. Google Motion chart is used to provide an interactive display to do so.
 3. Prediction using a linear model is made on the profits provided by fruits based on type, time and location of the fruit.
 
-
 --- 
+
 
 ## Google Motion Visualization
 The Google visualization plot is used to check how different variables in the Fruits data set vary with time.
-```{r,echo=TRUE,results='asis'}
+```{r,echo=FALSE,results='asis'}
  Motion=gvisMotionChart(Fruits,timevar = "Year",idvar = "Fruit")
 Motion
 ```
----
 
+---
 
 ## Prediction Mechanism
 
@@ -40,6 +41,7 @@ Motion
  fit<-lm(Profit~ Location + Fruit + Year,data= Fruits)
 fit$coefficients
 ```
+
 ---
 
 ## Navigation Bar
@@ -53,6 +55,5 @@ A navigation bar is provided that moves from visualization to prediction to help
 1. It is ill advised to take any predictions of the product seriously.
 2. The purpose was to learn slidify and shiny apps, and the student in question has gotten some idea of how to use them.
 
----
 
 

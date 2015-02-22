@@ -61,17 +61,12 @@
     <h2>Google Motion Visualization</h2>
   </hgroup>
   <article data-timings="">
-    <p>The Google visualization plot is used to check how different variables in the Fruits data set vary with time.</p>
-
-<pre><code class="r"> Motion=gvisMotionChart(Fruits,timevar = &quot;Year&quot;,idvar = &quot;Fruit&quot;)
-Motion
-</code></pre>
-
-<p>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+    <p>The Google visualization plot is used to check how different variables in the Fruits data set vary with time.
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
   &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</a>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>MotionChartIDb4f31e5f1c0</title>
+<title>MotionChartIDb4f3f9bf97b</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /></p>
 
 <style type="text/css">
@@ -90,14 +85,14 @@ body {
 <body>
  &lt;!-- MotionChart generated in R 3.1.2 by googleVis 0.5.7 package --&gt;</p>
 
-<!-- Mon Feb 23 03:36:39 2015 -->
+<!-- Mon Feb 23 03:49:09 2015 -->
 
 <!-- jsHeader -->
 
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartIDb4f31e5f1c0 () {
+function gvisDataMotionChartIDb4f3f9bf97b () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -195,15 +190,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartIDb4f31e5f1c0() {
-var data = gvisDataMotionChartIDb4f31e5f1c0();
+function drawChartMotionChartIDb4f3f9bf97b() {
+var data = gvisDataMotionChartIDb4f3f9bf97b();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartIDb4f31e5f1c0')
+    document.getElementById('MotionChartIDb4f3f9bf97b')
     );
     chart.draw(data,options);
     
@@ -227,9 +222,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartIDb4f31e5f1c0);
+callbacks.push(drawChartMotionChartIDb4f3f9bf97b);
 })();
-function displayChartMotionChartIDb4f31e5f1c0() {
+function displayChartMotionChartIDb4f3f9bf97b() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -255,16 +250,16 @@ callbacks.shift()();
 
 <!-- jsChart -->  
 
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDb4f31e5f1c0"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDb4f3f9bf97b"></script>
  
 
 <!-- divChart -->
 
-<div id="MotionChartIDb4f31e5f1c0" 
+<div id="MotionChartIDb4f3f9bf97b" 
   style="width: 600; height: 500;">
 </div>
 
-<p><div><span>Data: Fruits &#8226; Chart ID: <a href="Chart_MotionChartIDb4f31e5f1c0.html">MotionChartIDb4f31e5f1c0</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.7</a></span><br /> </p>
+<p><div><span>Data: Fruits &#8226; Chart ID: <a href="Chart_MotionChartIDb4f3f9bf97b.html">MotionChartIDb4f3f9bf97b</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.7</a></span><br /> </p>
 
 <!-- htmlFooter -->
 
@@ -272,13 +267,19 @@ callbacks.shift()();
   R version 3.1.2 (2014-10-31) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/motionchart">Documentation and Data Policy</a>
 </span></div>
-</body></p>
+</body>
+</html></p>
 
-<h2></html></h2>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<h2>Prediction Mechanism</h2>
-
-<ol>
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Prediction Mechanism</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>Prediction is done for completion of server calculation requirement and is ill advised.</li>
 <li>It is ill-advised since the data set is too small and the model too simple.</li>
 <li>Moreover, the variables used are intentionally chosen as year, type and location so that it throws somewhat ludicrous predictions and also is able to demonstrate the selection of inputs.</li>
@@ -293,17 +294,22 @@ fit$coefficients
 ##  4.699333e+03  1.000000e+01  2.477748e-15            NA -2.333333e+00
 </code></pre>
 
-<hr>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<h2>Navigation Bar</h2>
-
-<p>A navigation bar is provided that moves from visualization to prediction to help file of the product.</p>
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Navigation Bar</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A navigation bar is provided that moves from visualization to prediction to help file of the product.</p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-3" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Final Thoughts</h2>
   </hgroup>
@@ -313,13 +319,6 @@ fit$coefficients
 <li>The purpose was to learn slidify and shiny apps, and the student in question has gotten some idea of how to use them.</li>
 </ol>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-4" style="background:;">
-  <article data-timings="">
-    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -342,14 +341,20 @@ fit$coefficients
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Final Thoughts'>
+        data-slide=3 title='Prediction Mechanism'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title=''>
+        data-slide=4 title='Navigation Bar'>
          4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Final Thoughts'>
+         5
       </a>
     </li>
   </ul>

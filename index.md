@@ -11,28 +11,23 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+
 ## Synopsis
 
 1. The purpose of this project is to explore the Fruits data set that comes with Google Visualization library.
 2. Google Motion chart is used to provide an interactive display to do so.
 3. Prediction using a linear model is made on the profits provided by fruits based on type, time and location of the fruit.
 
-
 --- 
+
 
 ## Google Motion Visualization
 The Google visualization plot is used to check how different variables in the Fruits data set vary with time.
-
-```r
- Motion=gvisMotionChart(Fruits,timevar = "Year",idvar = "Fruit")
-Motion
-```
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>MotionChartIDb4f31e5f1c0</title>
+<title>MotionChartIDb4f3f9bf97b</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -48,14 +43,14 @@ body {
 </head>
 <body>
  <!-- MotionChart generated in R 3.1.2 by googleVis 0.5.7 package -->
-<!-- Mon Feb 23 03:36:39 2015 -->
+<!-- Mon Feb 23 03:49:09 2015 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartIDb4f31e5f1c0 () {
+function gvisDataMotionChartIDb4f3f9bf97b () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -153,15 +148,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartIDb4f31e5f1c0() {
-var data = gvisDataMotionChartIDb4f31e5f1c0();
+function drawChartMotionChartIDb4f3f9bf97b() {
+var data = gvisDataMotionChartIDb4f3f9bf97b();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartIDb4f31e5f1c0')
+    document.getElementById('MotionChartIDb4f3f9bf97b')
     );
     chart.draw(data,options);
     
@@ -185,9 +180,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartIDb4f31e5f1c0);
+callbacks.push(drawChartMotionChartIDb4f3f9bf97b);
 })();
-function displayChartMotionChartIDb4f31e5f1c0() {
+function displayChartMotionChartIDb4f3f9bf97b() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -211,14 +206,14 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDb4f31e5f1c0"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDb4f3f9bf97b"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartIDb4f31e5f1c0" 
+<div id="MotionChartIDb4f3f9bf97b" 
   style="width: 600; height: 500;">
 </div>
- <div><span>Data: Fruits &#8226; Chart ID: <a href="Chart_MotionChartIDb4f31e5f1c0.html">MotionChartIDb4f31e5f1c0</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.7</a></span><br /> 
+ <div><span>Data: Fruits &#8226; Chart ID: <a href="Chart_MotionChartIDb4f3f9bf97b.html">MotionChartIDb4f3f9bf97b</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.7</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.1.2 (2014-10-31) 
@@ -226,8 +221,8 @@ callbacks.shift()();
 </span></div>
 </body>
 </html>
----
 
+---
 
 ## Prediction Mechanism
 
@@ -246,6 +241,7 @@ fit$coefficients
 ##   (Intercept)  LocationWest  FruitBananas  FruitOranges          Year 
 ##  4.699333e+03  1.000000e+01  2.477748e-15            NA -2.333333e+00
 ```
+
 ---
 
 ## Navigation Bar
@@ -259,6 +255,5 @@ A navigation bar is provided that moves from visualization to prediction to help
 1. It is ill advised to take any predictions of the product seriously.
 2. The purpose was to learn slidify and shiny apps, and the student in question has gotten some idea of how to use them.
 
----
 
 
