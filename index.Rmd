@@ -13,36 +13,45 @@ knit        : slidify::knit2slides
 
 ## Synopsis
 
-1. 
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+1. The purpose of this project is to explore the Fruits data set that comes with Google Visualization library.
+2. Google Motion chart is used to provide an interactive display to do so.
+3. Prediction using a linear model is made on the profits provided by fruits based on type, time and location of the fruit.
 
-```{r,echo=FALSE}
- Motion=gvisMotionChart(Fruits,timevar = "Year",idvar = "Fruit")
-plot(Motion)
-```
+
 --- 
 
 ## Google Motion Visualization
-
-
+The Google visualization plot is used to check how different variables in the Fruits data set vary with time.
+```{r,echo=TRUE,results='asis'}
+ Motion=gvisMotionChart(Fruits,timevar = "Year",idvar = "Fruit")
+Motion
+```
 ---
 
 
 ## Prediction Mechanism
 
-1. Another stupid slide
-2. Shit happening
+1. Prediction is done for completion of server calculation requirement and is ill advised.
+2. It is ill-advised since the data set is too small and the model too simple.
+3. Moreover, the variables used are intentionally chosen as year, type and location so that it throws somewhat ludicrous predictions and also is able to demonstrate the selection of inputs.
+4. The model chosen is shown as follows.
 
+```{r,echo=TRUE}
+ fit<-lm(Profit~ Location + Fruit + Year,data= Fruits)
+fit$coefficients
+```
 ---
 
-## Inputs Used
+## Navigation Bar
 
-Does it really matters! Fuck it.
+A navigation bar is provided that moves from visualization to prediction to help file of the product.
 
 ---
 
 ## Final Thoughts
+
+1. It is ill advised to take any predictions of the product seriously.
+2. The purpose was to learn slidify and shiny apps, and the student in question has gotten some idea of how to use them.
 
 ---
 
