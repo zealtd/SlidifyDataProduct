@@ -1,7 +1,7 @@
 ---
-title       : 
-subtitle    : 
-author      : 
+title       : Data Product Pitch
+subtitle    : Predicting and visualizing Profits on Fruit over time
+author      : Ahsan Ijaz
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -11,26 +11,34 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Synopsis
 
 1. Edit YAML front matter
 2. Write using R Markdown
 3. Use an empty line followed by three dashes to separate slides!
 
---- .class #id 
+--- 
 
-## Slide 2
+## Google Motion Visualization
+
 
 ---
+
+
+## Prediction Mechanism
+
 1. Another stupid slide
 2. Shit happening
 
 ---
 
-## Slide 3
+## Inputs Used
+
+Does it really matters! Fuck it.
 
 ---
-Does it really matters! Fuck it.
+
+## Final Thoughts
 
 ---
 
