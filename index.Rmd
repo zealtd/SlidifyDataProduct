@@ -13,10 +13,14 @@ knit        : slidify::knit2slides
 
 ## Synopsis
 
-1. Edit YAML front matter
+1. 
 2. Write using R Markdown
 3. Use an empty line followed by three dashes to separate slides!
 
+```{r,echo=FALSE}
+ Motion=gvisMotionChart(Fruits,timevar = "Year",idvar = "Fruit")
+plot(Motion)
+```
 --- 
 
 ## Google Motion Visualization

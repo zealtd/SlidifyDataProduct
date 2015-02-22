@@ -13,10 +13,18 @@ knit        : slidify::knit2slides
 
 ## Synopsis
 
-1. Edit YAML front matter
+1. 
 2. Write using R Markdown
 3. Use an empty line followed by three dashes to separate slides!
 
+
+```
+## Error in eval(expr, envir, enclos): could not find function "gvisMotionChart"
+```
+
+```
+## Error in plot(Motion): object 'Motion' not found
+```
 --- 
 
 ## Google Motion Visualization
